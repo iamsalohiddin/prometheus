@@ -1,0 +1,19 @@
+  service:
+    ## If false, no Service will be created for the Prometheus server
+    ##
+    enabled: true
+
+    annotations: {}
+    labels: {}
+    clusterIP: ""
+
+    ## List of IP addresses at which the Prometheus server service is available
+    ## Ref: https://kubernetes.io/docs/concepts/services-networking/service/#external-ips
+    ##
+    externalIPs: []
+
+    loadBalancerIP: ""
+    loadBalancerSourceRanges: []
+    servicePort: 80
+    sessionAffinity: None
+    type: LoadBalancer
