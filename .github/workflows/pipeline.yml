@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  grafana:
+  prometheus:
     runs-on: ubuntu-latest
 
     steps:
