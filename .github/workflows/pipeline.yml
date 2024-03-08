@@ -56,4 +56,4 @@ jobs:
     - name: Deploy Helm Chart
       run: |
         helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-        helm upgrade my-prometheus prometheus/prometheus -f values.yaml -f values-dev.yaml -n prometheus
+        helm upgrade my-prometheus prometheus-community/prometheus -f values.yaml -f values-dev.yaml -n prometheus
